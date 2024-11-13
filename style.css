@@ -1,0 +1,168 @@
+/* style.css updated styles */
+/* Add these styles to your existing style.css file */
+
+/* Global Styles */
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 600px) {
+
+  /* Adjust the main game title for mobile */
+  #game-stage {
+    font-size: 40px;
+    /* Smaller font size for mobile */
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* Adjust the game section title for mobile */
+  #game-title {
+    font-size: 20px;
+    /* Smaller font size for mobile */
+    padding: 5px;
+    text-align: center;
+  }
+
+  /* Image adjustments for mobile */
+  .background-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+
+  /* Input and button styles may need to be adjusted as well */
+  #name-form input[type="text"],
+  .cute-orange-button {
+    width: 90%;
+    /* Make input and button take up most of the space */
+    margin: 15px 15px;
+    /* Center them with automatic left/right margins */
+    display: block;
+    /* Ensure they appear on their own line */
+
+  }
+
+  #maker {
+    position: fixed;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    display: block;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+  }
+}
+
+.gray-bg {
+  background-color: #b0b0b0;
+}
+
+.purple-bg {
+  background-color: #fadedb;
+}
+
+.green-bg {
+  background-color: #94e6e4;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+}
+
+#game-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1#game-stage {
+  margin: 0 0 10px 0;
+}
+
+.background-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+img#Image {
+  max-width: 20%;
+  /* Set max-width to 70% of the containing element */
+  height: auto;
+  /* Maintain the aspect ratio */
+}
+
+h1 {
+  font-family: 'Open Sans', sans-serif;
+  text-align: center;
+  z-index: 1;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+#name-form {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#game-section {
+  text-align: center;
+  margin-top: -10px;
+}
+
+/* Other styles remain unchanged */
+
+
+/* Reset some default styles */
+button {
+  display: block;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+/* Cute Orange Button */
+.cute-orange-button {
+  margin-top: 20px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* 使用 transform 属性来实现居中 */
+  background-color: #ff8c00;
+  color: #fff;
+  padding: 10px 20px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.replay-button {
+  margin-top: 80px;
+}
+
+#maker {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: block;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 12px;
+  color: #ffffff;
+}

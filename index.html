@@ -1,0 +1,37 @@
+<!-- index.html updated structure -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EXGOOSE ME?</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+
+<body>
+  <div id="game-container">
+    <h1 id="game-stage">" Go Goose "</h1>
+    <div class="background-container">
+      <img id="Image" src="fist.gif" alt="Birth Gif">
+    </div>
+    <form id="name-form">
+      <label for="player-name">Enter Your Name:</label>
+      <input type="text" id="player-name" required>
+    </form>
+    <div>
+      <button class="cute-orange-button" type="button" onclick="startNextQuestion()">Start</button>
+    </div>
+    <div id="game-section" style="display: none;">
+      <h2 id="game-title">Game Section 1: "Do you hatch”</h2>
+      <p id="result"></p>
+      <div id="button-container"></div>
+    </div>
+  </div>
+  <h2 id="maker">Writen by: Zoey, Steve Developped by: Ming</h2>
+</body>
+
+</html>
